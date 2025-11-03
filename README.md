@@ -6,14 +6,19 @@ The **COVID-19 Variant Tracker** is a Shiny web application designed to track SA
 
 - **Variant fitness advantages**: Estimates of how fast each variant is growing relative to a reference variant (currently XBB.1.5)
 - **Variant prevalence**: Estimated proportion of each variant over time
+![Variant prevalence](./assets/estimated_variant.png)
 - **Inferred cases**: Estimated cases per 100k population by variant
+![Inferred Cases](./assets/inferred_cases.png)
 
 ## Purpose
 
 The goal of this dashboard is to:
 
 1. **Provide robust early characterization of the risk posed by novel variants**
+![Variants by country](./assets/ppi_country.png)
 2. **Provide real-time variant prevalence estimates to all countries**, even those with limited sequencing capacity
+![Variants by country](./assets/cases.gif)
+
 
 ## Data Sources
 
@@ -111,6 +116,7 @@ Displays the global estimated fitness advantages of tracked variants:
   - Click rows to view country-level details
 
 ### 2. Global Map Overview
+![Map by variant](./assets/map.gif)
 
 Interactive world map showing:
 - **Nowcasted prevalence** of a selected variant by country
