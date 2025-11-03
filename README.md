@@ -1,4 +1,4 @@
-# COVID-19 Variant Dynamics Dashboard - Technical Documentation
+# COVID-19 Variant Dynamics Dashboard - Rockefeller Foundation Pandemic Prevention Institute
 
 ## Overview
 
