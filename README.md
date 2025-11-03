@@ -186,30 +186,6 @@ State-level analysis for US states:
 - **DT**: Interactive data tables
 - **Statistical modeling**: Hierarchical Bayesian approach (model run external to Shiny app)
 
-### Data Storage
-
-- **DuckDB database**: All data loaded into in-memory database at startup
-- **Tables**:
-  - `variant_t_all`: Country-level variant dynamics
-  - `variant_t_states`: US state-level variant dynamics
-  - `summary`: Global fitness advantage summaries
-  - `r_summary`: Country and global fitness advantages
-  - `mu_all`: Multi-country fitness advantage distributions
-  - `cases`: Combined total cases and variant-specific cases
-  - `map_data`: Latest prevalence estimates for mapping
-
-### Data Files
-
-Input data files (Parquet and CSV):
-- `variant_dynamics_summary_data.parquet`: Main variant dynamics data
-- `global_fitness_advantage_clean_table.parquet`: Global fitness estimates
-- `multicountry_mu_distrib.parquet`: Multi-country posterior distributions
-- `fitness_advantages_summary.parquet`: Summary fitness advantages
-- `US_variant_dynamics_summary_data.csv`: US state data
-- `total_cases.parquet`: Country-level case data
-- `variants_tracking.csv`: List of variants being tracked
-- `color_dict.csv`: Color assignments for variants
-
 ## Interpretation Guidelines
 
 ### Understanding Fitness Advantage
@@ -249,14 +225,6 @@ The model makes several simplifying assumptions:
 
 The current reference variant is **XBB.1.5**, selected as the variant with the most sequences in the past two weeks. All fitness advantages are calculated relative to this variant.
 
-## Data Availability
-
-Model outputs are available for download:
-- Weekly variant fitness advantage estimates (global and country-specific)
-- Variant prevalence dynamics (nowcasts)
-- Inferred variant cases
-
-For data access, see the application's About section or contact the Rockefeller Foundation team.
 
 ## Citation and Acknowledgments
 
